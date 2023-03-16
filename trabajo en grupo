@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float cliente,vendedor,demanda;
+    cout<<"calcular cliente ";
+    cin>> cliente;
+    cout<<"calcular vendedor ";
+    cin>> vendedor; 
+    demanda= cliente * vendedor;
+    cout<<"la demanda es: " << demanda<<endl;
+ 
+
+    
+
+    return 0;
+}
