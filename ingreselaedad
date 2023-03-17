@@ -1,0 +1,32 @@
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int edad;
+    cout<<"Ingrese la edad: ";
+    cin>>edad;
+    if(edad>=18)
+       cout<<"Es mayor de edad ";
+    else
+       cout<<"Es menor de edad ";
+    return 0;
+}
+
+
+
+Algoritmo edad
+	Escribir 'ingrese la edad'
+	Leer ed
+	Si ed>=18 Entonces
+		Escribir 'es mayor de edad'
+	SiNo
+		Escribir "no es mayor de edad"
+	FinSi
+FinAlgoritmo
+
+
+
+
