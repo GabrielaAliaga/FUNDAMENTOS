@@ -1,0 +1,65 @@
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float n1, n2, n3, s, p;
+    cin>>n1;
+    cin>>n2;
+    cin>>n3;
+    if(n1>=0&&n1<=10)
+    {
+        if(n2>=0&&n2<=10)
+        {
+            if(n3>=0&&n3<=10)
+            {
+                s=n1+n2+n3;
+                p=s/3;
+                cout<<"el promedio es: ";
+                cout<<p;
+            }
+        }
+    }
+  else;
+    {
+     cout<<"error ";
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numero1, numero2, numero3;
+    bool validacion1, validacion2, validacion3;
+    cout<<"ingrese tres numeros enteros entre 0 a 10: ";
+    validacion1= numero1 >= 0 && numero1 <= 10;
+    validacion2= numero2 >= 0 && numero2 <= 10;
+    validacion3= numero3 >= 0 && numero3 <= 10;
+if (validacion1+ validacion2+ validacion3);
+
+    return 0;
+}
