@@ -1,0 +1,23 @@
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int radio;
+    float area,d,v,volumen,pi; 
+    cout<<"ingrese el diametro ";
+    cin>>d;
+    area=3.141516*(d/2)*(d/2);
+    cout<< "el area es: "<< area<< endl;
+    
+    cout<< "ingrese el radio: ";
+    cin>> radio;
+    pi=3.141516;
+    volumen=4/3*pi*(radio*radio*radio);
+    cout<< "el volumen es: "<< volumen;
+    
+    return 0;
+    
+}
