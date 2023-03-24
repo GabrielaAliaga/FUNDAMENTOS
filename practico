@@ -21,3 +21,47 @@ int main()
     return 0;
     
 }
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int qsegundos, horas, minutos, segundos;
+    cout<<"ingrese la cantidad de segundos a convertir: ";
+    cin>> qsegundos;
+    horas=qsegundos/3600;
+    minutos= (qsegundos% 3600)/60;
+    segundos= qsegundos%60;
+    cout<<"la cantidad de segundos equivale a: "<<endl;
+    cout<<"horas: "<<horas<<endl;
+    cout<<"minutos: "<< minutos<<endl;
+    cout<<"segundos"<< segundos<<endl; 
+
+    return 0;
+}
+
+*******************************************************************************/
+#include <iostream>
+#include<string> 
+using namespace std;
+
+int main()
+{
+    string nom;
+    float horas, precio, salario;
+    cout<<"ingresar nombre del trabajador: ";
+    cin>> nom;
+    cout<<"ingrese cantidad de horas trabajdas: ";
+    cin>> horas;
+    cout<<"ingrese precio por horas trabajadas: ";
+    cin>> precio; 
+    if((precio*horas)>8272)
+       salario=precio*horas-(precio*horas*0.13);
+    else
+        salario=precio*horas;
+    cout<<"el salario neto  del trabajador es: "<<salario; 
+    return 0;
+}
