@@ -1,0 +1,78 @@
+*******************************************************************************/
+#include <iostream>
+#include<string>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int opcion,cantidad,a,b,c,d,presupuesto,gine,trau,pedi;
+    float precio,total;
+    double x1,x2;
+    cout<<"MENU"<<endl;
+    cout<<"1. calcular el precio a pagar"<<endl;
+    cout<<"2. calcular presupuesto"<<endl;
+    cout<<"3. calcular la solucion unica"<<endl;
+    cout<<"ingresar opcion: ";
+    cin>>opcion;
+    if (opcion==1)
+    {
+        cout<<"ingrese la cantidad: ";
+        cin>> cantidad;
+        cout<<"ingrese el precio: ";
+        cin>> precio;
+        if(cantidad>=3)
+            total=(cantidad*precio)*0.8;
+        else
+            total=(cantidad*precio)*0.9;
+        cout<<"total de la cantidad es:"<<total;
+    }
+    else
+        if(opcion==2)
+        {
+           cout<<"ingrese cantidad anual presupuestado: ";
+           cin>> presupuesto;
+           gine=presupuesto*0.4;
+           trau=presupuesto*0.3;
+           pedi=presupuesto*0.3;
+           cout<<"cantidad asignada de ginecologia es:"<<gine<<endl;
+           cout<<"cantidad asignada de traumatologia es:"<<trau<<endl;
+           cout<<"cantidad asignada de pediatria es:"<<pedi; 
+        }
+        else
+            if(opcion==3)
+            {
+                cout<<"ingrese a:";
+                cin>>a;
+                cout<<"ingrese b:";
+                cin>>b;
+                cout<<"ingrese c:";
+                cin>>c;
+                if (a==0)
+                    cout<<"no se puede"<<endl;
+                else
+                {
+                    d=b*b-4*a*c;
+                    if (d==0)
+                    {
+                       x1=-b/(2*a);
+                       cout<<"la solucion es unica"<<x1<<endl;
+                    } 
+                    else
+                        if (d<0)
+                         cout<<"la solucion es imaginaria"<<endl;
+                    else
+                    {
+                        x1=(-b+sqrt(b*b-4*a*c))/(2*a);
+                        x2=(-b-sqrt(b*b-4*a*c))/(2*a);
+                        cout<<"el resultado es:"<<x1<<endl;
+                        cout<<"el resultado es:"<<x2<<endl;
+                    } 
+                } 
+            }
+            else
+            cout<<"error";
+
+    return 0;
+}
