@@ -1,0 +1,16 @@
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N,suma =0;
+    cout<<"Ingrese valor entero para N:";
+    cin>>N;
+    for (int i=1; i<=N; i+=2){ 
+    }
+    cout<<"la suma de los numeros enteros impares entre 1 y"<<N<<"es"<< suma<<endl;
+
+    return 0;
+}
