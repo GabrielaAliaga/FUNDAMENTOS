@@ -1,0 +1,135 @@
+1.	Dado un número entero N, hacer un programa para sumar los dígitos de cada uno de ellos.   Ej. Si N= 45634,  la suma es 4+5+6+3+4=22
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, sum=0;
+    cout<<"Ingrese numero entero: ";
+    cin>>N;
+    while(N!=0){
+        sum +=N%10;
+        N/=10;
+    }
+    cout<<"la suma de los digitos es "<<sum<<endl;
+    return 0;
+}
+2.	Dado un número entero N, hacer un programa para invertir el número en otra variable Z.  Ej. Si N= 456721, el número invertido es Z=127654.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+     int N, sum=0;
+    cout<<"Ingrese numero entero: ";
+    cin>>N;
+    while(N!=0){
+        sum =sum*10+N%10;
+        N/=10;
+    }
+    cout<<"el digito al reves es: "<<sum<<endl;
+
+    return 0;
+}
+3.	Hacer un programa para contar los dígitos pares que tiene un número N.  Ej. Si N= 5678312,  este tiene 3 dígitos pares (6, 8, 2).
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, sum=0,digit;
+    cout<<"Ingrese numero entero: ";
+    cin>>N;
+    while(N!=0){
+        digit=N%10;
+        if(digit%2==0){
+            sum++;
+        }
+        N/=10;
+    }
+    cout<<"la cantidad de numero pares son:"<<sum<<endl;
+
+    return 0;
+}
+4.	Dado un número entero, comprobar si el número es capicúa, es decir, si leídos de la izquierda a la derecha y viceversa dan el mismo valor o número.  Ej. 34543.
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num, numoriginal,resta,numinvertido;
+    cout<<"intriducir numero entero: ";
+    cin>> num;
+    numoriginal=num;
+    while(num!=0){
+        resta=num%10;
+        numinvertido=numinvertido*10+resta;
+        num/=10;
+    }
+    if(numoriginal==numinvertido){
+        cout<<numoriginal<<"es un numero capicua. ";
+    }
+    else{
+        cout<<numoriginal<<"no es un numero capicua. ";
+    }
+
+    return 0;
+}
+5.	Hallar el complemento a 9 de un número entero N.  Ej. 4567, su complemento es 5432.
+*******************************************************************************/
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n,resto,complemento,i;
+    cout<<"ingresa un numero entero: ";
+    cin>> n;
+    complemento=0;
+    i=0;
+    while(n>0){
+        resto= n%10;
+        complemento+=(9-resto)*pow(10,i);
+        n/=10;
+        i++;
+    }
+    cout<<"el complemento a 9 es: "<<complemento<<endl;
+
+    return 0;
+}
+6.	Dado un número entero en base 8, comprobar si alguno de sus dígitos no corresponden a su base.  Ej. El número 2762823, el dígito 8 no corresponde a la base.
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,digit; 
+    bool flag=false;
+    cout<<"Introducir un numero entero en base 8: ";
+    cin>> num;
+    while (num !=0){
+        digit=num % 10;
+        if(digit>=8){
+            flag=true;
+            break;
+        }
+        num/=10;
+    }
+    if(flag){
+        cout<<"el numero tiene digitos que no corresponden a su base. ";
+    }
+    else{
+        cout<<" el numero tiene todos sus digitos en la base correcta. ";
+    }
+
+    return 0;
+}
+
