@@ -1,0 +1,105 @@
+// ejemplovector.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+// vectores.cpp : Defines the entry point for the console application.
+//
+
+
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+//Prototipos
+
+void cargar(double a[], int tam);
+void mostrar(double a[], int tam);
+double promedio(double a[], int tam);
+void Burbuja(double a[], int tam);
+int BusquedaLineal(double a[], int b, int tam);
+
+void main()
+{
+	double vec[MAX], prom, k;  //Declarando al vector vec que tiene un tamaña MAX
+	int tam, n, pos,opcion;
+	do
+	{
+		cout << "Ingrese el numero de elementos del vector: ";
+		cin >> n;
+	} while ((0 >= n) || (n > MAX));
+	do
+	{
+		cout << "menu"<<endl;
+		cout << "1.cargar"<<endl;
+		cout << "2.mostrar" << endl;
+		cout << "3.promedio" << endl;
+		cout << "4.burbuja" << endl;
+		cout << "5.busqueda" << endl;
+		cout << "salir" << endl;
+		cin >> opcion;
+		swich(opcion) {
+		case 1:cargar(vec,n);
+			break;
+		case 2:mostrar(vec,n);+
+
+			break;
+		case 3:cout << "el promedio del vector es:" << promedio(vec, n);
+			break;
+		case 4:
+			cout << "imgrese el elmento a buscar";
+			cin >> else;
+			if busqueda(vec, n, elem);
+			cout << "el elemento pertenece al vector" << endl;
+			else;
+			cout << "el elemento no pertenece al vector" << endl;
+			break;
+		case 5:
+			cout<<""
+
+
+	} while (¨´);
+	cargar(vec, n); // Llamada a la función el vector solo se coloca el nombre
+	// Busqueda de un elemento en el vector
+	cout << endl << "Ingrese el elemento a buscar: ";
+	cin >> k;
+	pos = BusquedaLineal(vec, k, n); // Llamada a la busqueda lineal
+	if (pos == -1)
+		cout << "No se encuentra el dato";
+	else
+		cout << "El elemento esta en la posicion " << pos;
+	Burbuja(vec, n);  // Llamada a la burbuja
+	mostrar(vec, n);   // Llamada a mostrar
+	prom = promedio(vec, n);
+	cout << "el valor del promedio es: " << prom << endl;
+	getch();
+}
+
+void cargar(double a[], int tam)
+{
+	for (int i = 0; i < tam; i++)
+	{
+		cout << "ingrese vec[" << i << "]= ";
+		cin >> vec[i];
+	}
+}
+
+void mostrar(double vec[], int tam);
+double pomedio(double vec[], int tam)
+{
+	int acumulador = 0;
+	for (int i = 0; i < tam; i++)
+	{
+		acumulador = acumulador + vec[i];
+}
+	double promedio = (double)acumulador / tam;
+	return promedio;
+
+		
+}
+void burbuja(double vec[], int tam);
+{
+	double p = 0;
+	for (int i = 0; i < tam; i++)
+		p = p + a[i];
+return p / tam;   // La función devuelve un valor
